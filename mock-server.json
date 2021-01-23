@@ -14,7 +14,6 @@
         "discord": "https://discord.carloNo_s",
         "linked": "https://linked.carloNo_s"
       }
-
     },
     {
       "id": 1,
@@ -30,6 +29,16 @@
         "discord": "https://discord.linds",
         "linked": "https://linked.linds"
       }
+    },
+    {
+      "username": "JahHightower",
+      "mentee": "on",
+      "javascript": "javascript",
+      "github": "",
+      "discord": "",
+      "instagram": "",
+      "slack": "",
+      "id": 2
     }
-  ] 
+  ]
 }

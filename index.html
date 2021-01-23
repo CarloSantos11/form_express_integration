@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form>
-    <label for="username">User Name</label> 
-    <input type="text" name="username" id="username" placeholder="Username"><br/>
-    
-    <label for="role">Role</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action=" http://localhost:3000/users" method="POST">
+      <label for="username">User Name</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Username"
+      /><br />
 
-    <input type="radio" name="mentor" id="mentor">
-    <label for="mentor">Mentor</label>
+      <label for="role">Role</label>
 
-    <input type="radio" name="mentee" id="mentee">
-    <label for="mentor">Mentee</label><br>
+      <input type="radio" name="mentor" id="mentor" />
+      <label for="mentor">Mentor</label>
 
-    <label for="languages">Languages</label><br>
+      <input type="radio" name="mentee" id="mentee" />
+      <label for="mentor">Mentee</label><br />
 
-    <input type="checkbox" value="javascript" name="javascript" id="java">
-    <label for="languages">Javascript</label><br>
+      <label for="languages">Languages</label><br />
 
-    <input type="checkbox" value="java" name="java" id="java">
-    <label for="languages">Java</label><br>
+      <input type="checkbox" value="javascript" name="javascript" id="java" />
+      <label for="languages">Javascript</label><br />
 
-    <input type="checkbox" value="javascript" name="javascript" id="java">
-    <label for="languages">Ruby</label><br>
+      <input type="checkbox" value="java" name="java" id="java" />
+      <label for="languages">Java</label><br />
 
-    <input type="checkbox" value="java" name="java" id="java">
-    <label for="languages">Python</label><br>
+      <input type="checkbox" value="javascript" name="javascript" id="java" />
+      <label for="languages">Ruby</label><br />
 
-    <input type="button" value="Github"><br>
-    <input type="text" name="github" id="github" placeholder="Profile URL"><br/>
+      <input type="checkbox" value="java" name="java" id="java" />
+      <label for="languages">Python</label><br />
 
-    <input type="button" value="Discord"><br>
-    <input type="text" name="discord" id="discord" placeholder="Profile URL"><br/>
+      <input type="button" value="Github" /><br />
+      <input
+        type="text"
+        name="github"
+        id="github"
+        placeholder="Profile URL"
+      /><br />
 
-    <input type="button" value="Instagram"><br>
-    <input type="text" name="instagram" id="instagram" placeholder="Profile URL"><br/>
+      <input type="button" value="Discord" /><br />
+      <input
+        type="text"
+        name="discord"
+        id="discord"
+        placeholder="Profile URL"
+      /><br />
 
-    <input type="button" value="Slack"><br>
-    <input type="text" name="slack" id="slack" placeholder="Profile URL"><br/>
+      <input type="button" value="Instagram" /><br />
+      <input
+        type="text"
+        name="instagram"
+        id="instagram"
+        placeholder="Profile URL"
+      /><br />
 
-    <button type="submit">Submit</button>
-  </form>
-</body>
+      <input type="button" value="Slack" /><br />
+      <input
+        type="text"
+        name="slack"
+        id="slack"
+        placeholder="Profile URL"
+      /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
