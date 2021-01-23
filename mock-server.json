@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "carloNo_s",
+      "role": "mentee",
+      "languages": [
+        "javascript",
+        "java",
+        "ruby"
+      ],
+      "social-links": {
+        "github": "http://github.carloNo_s.com",
+        "discord": "https://discord.carloNo_s",
+        "linked": "https://linked.carloNo_s"
+      }
+
+    },
+    {
+      "id": 1,
+      "username": "lindseyLopez",
+      "role": "mentee",
+      "languages": [
+        "javascript",
+        "python",
+        "ruby"
+      ],
+      "social-links": {
+        "github": "http://github.lins.com",
+        "discord": "https://discord.linds",
+        "linked": "https://linked.linds"
+      }
+    }
+  ] 
+}
