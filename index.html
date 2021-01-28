@@ -1,50 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form>
-    <label for="username">User Name</label> 
-    <input type="text" name="username" id="username" placeholder="Username"><br/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <section class="container">     
+      <section id="formSection" class="grid-item">
+        <form
+          name="form"
+          id="signupform"
+          method="get"
+        >
+          <div id="username">
+            <label for="username">User Name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+            /><br />
+          </div>
+
+          <div id="role">
+            <label for="role">Role</label><br/>
+
+            <input type="radio" name="role" id="mentor" value="mentor" />
+            <label for="mentor">Mentor</label>
+
+            <input type="radio" name="role" id="mentee" value="mentee" />
+            <label for="mentor">Mentee</label><br />
+          </div>
+
+          <div id="languages">
+            <label for="languages">Languages</label><br />
+
+            <input
+              type="checkbox"
+              value="javascript"
+              name="languages"
+              id="javascript"
+            />
+            <label for="javascript">Javascript</label><br />
+
+            <input type="checkbox" value="java" name="languages" id="java" />
+            <label for="java">Java</label><br />
+
+            <input type="checkbox" value="ruby" name="languages" id="ruby" />
+            <label for="ruby">Ruby</label><br />
+
+            <input type="checkbox" value="python" name="languages" id="python" />
+            <label for="python">Python</label><br />
+          </div>
+
+          <div id="social_links">
+            <input type="button" value="Github" /><br />
+            <input
+              type="text"
+              name="social_links"
+              id="github"
+              placeholder="Profile URL"
+            /><br />
+
+            <input type="button" value="Discord" /><br />
+            <input
+              type="text"
+              name="social_links"
+              id="discord"
+              placeholder="Profile URL"
+            /><br />
+
+            <input type="button" value="Instagram" /><br />
+            <input
+              type="text"
+              name="social_links"
+              id="instagram"
+              placeholder="Profile URL"
+            /><br />
+
+            <input type="button" value="Slack" /><br />
+            <input
+              type="text"
+              name="social_links"
+              id="slack"
+              placeholder="Profile URL"
+            /><br />
+          </div>
+
+          <button type="submit">Submit</button>
+
+        </form>
+      </section>
+
+       <section class="post grid-item hidden">
+        <h2>User Name</h2>
+        <h4 id="post_username"></h4>
+
+        <h2>Role</h2>
+        <h4 id="post_role"></h4>
+        
+        <h2>Languages</h2>
+        <h4 id="post_languages"></h4>
+
+        <h2>Social Links</h2>
+        <div id="post_social_links">
+          <a href="#" target="_blank" id="d_github" class="fab fa-github-square hidden"></a>
+          <a href="#" target="_blank" id="d_discord" class="fab fa-discord hidden"></a>
+          <a href="#" target="_blank" id="d_instagram" class="fab fa-instagram hidden"></a>
+          <a href="#" target="_blank" id="d_slack" class="fab fa-slack hidden"></a>
+        </div>
+      </section>
+    </section>
     
-    <label for="role">Role</label>
+    <!-- Pseudo and next steps  -->
+    <!-- create a link to the social media sites specified on the form
+         when you click on the submit button the other prompt should pop up
 
-    <input type="radio" name="mentor" id="mentor">
-    <label for="mentor">Mentor</label>
+         The href attribute should be populated by the link address 
 
-    <input type="radio" name="mentee" id="mentee">
-    <label for="mentor">Mentee</label><br>
+         Only if the particular field is not empty for the socail media platform
+         display a clickable link that routes to users socail media platform
+     -->
 
-    <label for="languages">Languages</label><br>
 
-    <input type="checkbox" value="javascript" name="javascript" id="java">
-    <label for="languages">Javascript</label><br>
-
-    <input type="checkbox" value="java" name="java" id="java">
-    <label for="languages">Java</label><br>
-
-    <input type="checkbox" value="javascript" name="javascript" id="java">
-    <label for="languages">Ruby</label><br>
-
-    <input type="checkbox" value="java" name="java" id="java">
-    <label for="languages">Python</label><br>
-
-    <input type="button" value="Github"><br>
-    <input type="text" name="github" id="github" placeholder="Profile URL"><br/>
-
-    <input type="button" value="Discord"><br>
-    <input type="text" name="discord" id="discord" placeholder="Profile URL"><br/>
-
-    <input type="button" value="Instagram"><br>
-    <input type="text" name="instagram" id="instagram" placeholder="Profile URL"><br/>
-
-    <input type="button" value="Slack"><br>
-    <input type="text" name="slack" id="slack" placeholder="Profile URL"><br/>
-
-    <button type="submit">Submit</button>
-  </form>
-</body>
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
