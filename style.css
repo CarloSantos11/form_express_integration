@@ -1,0 +1,49 @@
+.container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+
+.grid-item {
+  font-size: 30px;
+  padding: 50px;
+}
+
+#formSection {
+  width:100%;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Social Links */
+.social-links { 
+  overflow: hidden;
+}
+.fab {
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  padding: 10px 0;
+
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
