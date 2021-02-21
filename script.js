@@ -41,7 +41,6 @@ function updateUserUI () {
 function handleUserChanges (e) {
   e.preventDefault();
   _user = updateUser(user);
-  console.log(_user)
   updateUserUI(_user);
   user = _user
 }
